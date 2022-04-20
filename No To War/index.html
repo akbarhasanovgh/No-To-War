@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>No to war!</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/QDM5i.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/QDM5i.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  <style>span.option:before { content: "(\000064\00006f\00006e\00006f\000072)"; color: #bba; }</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    .button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+      margin: 4px 2px;
+  
+    cursor: pointer;
+    }
+  </style>
+  <style>
+
+
+    
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    
+    .modal {
+      display: none; 
+      position: fixed; 
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; 
+      border: 1px solid #888;
+      width: 80%; 
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+    
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+    
+    @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)} 
+      to {-webkit-transform: scale(1)}
+    }
+      
+    @keyframes animatezoom {
+      from {transform: scale(0)} 
+      to {transform: scale(1)}
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    </style>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <style>
+    ::placeholder {
+      color: rgb(0, 0, 0);
+      opacity: 1; /* Firefox */
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: rgb(0, 0, 0);
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+     color: rgb(0, 0, 0);
+    }
+    </style>
+  <style>.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+  <style>
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+</style>
+  <style>
+    img.wdth{
+    width: 100px;
+    height: 100px;
+    }
+  </style>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+     
+background: #5628C2;
+background: -webkit-linear-gradient(top left, #5628C2, #07A667);
+background: -moz-linear-gradient(top left, #5628C2, #07A667);
+background: linear-gradient(to bottom right, #5628C2, #07A667);
+      
+      z-index: 1001;
+    }
+
+    .preloader__image {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin-top: -35px;
+      margin-left: -35px;
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+  <style>
+   body{
+   
+background: #8F034F;
+background: -webkit-linear-gradient(top left, #8F034F, #010101);
+background: -moz-linear-gradient(top left, #8F034F, #010101);
+background: linear-gradient(to bottom right, #8F034F, #010101);}
+ </style> 
+ <script src="//code-sb1.jivosite.com/widget/FQpunbeTmB" async></script>
+
+</head><body>
+  
+  
+  
+  
+  <!-- Прелоадер -->
+  <div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div>
+
+  <h1 class="fronttitle"><a class="hilite" href="" title="by Akbar Hasanov">No to war</a></h1>	
+  <p class="byline" style="text-align: left; padding-left: 1em; margin-top: 0; margin-bottom: 0">by <a href="https://t.me/Hasanooff">Akbar Hasanov</a></p>
+<table class="main"><tr> <hr>
+    <h1 id="ha">No to war</h1>
+    <img width="320" height="240" src="./11.3.41.89.0.jpg">
+    <br> <br>
+    <img width="320" height="240" src="./uzbekistan-flag-uzbekistan-large-flag-flag-of-uzbekistan-uzb.jpg">
+    
+ 
+  </video>
+    <hr> 
+    
+
+    <iframe width="320" height="240" src="https://www.youtube.com/embed/Iu1LYhR7U0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <br> <br>
+   <iframe width="320" height="240" src="https://www.youtube.com/embed/6x4P9g4bIA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <video width="320" height="240" controls="controls" poster="logo.png">
+      <source src="./001-VIDEO PROSMOTR.mp4" type="video/mp4">
+      <source src="./001-VIDEO PROSMOTR.mp4" type="video/ogg">
+  Sizning brauzeringiz video formatni podderjivat qilmaydi!
+  
+</div></td></tr>
+      <br>
+      <hr class="rounded">
+      <br><br><h1 id="bt">News</h1>
+  <iframe width="320" height="240" src="https://www.youtube.com/embed/Jh3jTA4exGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+  <br> <br>
+  <iframe width="320" height="240" src="https://www.youtube.com/embed/7xml90IvQJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+  <br> <br>
+  <iframe width="320" height="240" src="https://www.youtube.com/embed/rO0f-zDVnis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+
+  
+</table>
+  
+
+<script>alert("Assalomu alaykum! Web-Sahifamizga xush kelibsiz!")  </script>
+
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+ 
+
+<p id="demo"></p>
+
+
+
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+<a href="./pr1 not to navig/ind.html"class="button" target="_blank">Navigation bar</a>
+<a href="./login and sign up/inde.html"class="button" target="_blank">Login and Sign</a>
+  
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<div class="wrapper">
+  <div class="input-box">
+    <div class="tweet-area">
+      <span class="placeholder">Nimalarni o'ylayabsiz?</span>
+      <div class="input editable" contenteditable="true" spellcheck="false"></div>
+      <div class="input readonly" contenteditable="true" spellcheck="false"></div>
+    </div>
+    <div class="privacy">
+      <i class="fas fa-globe-asia"></i>
+      <span>Butun dunyoga</span>
+    </div>
+  </div>
+  <div class="bottom">
+    <ul class="icons">
+      <li><i class="uil uil-capture"></i></li>
+      <li><i class="far fa-file-image"></i></li>
+      <li><i class="fas fa-map-marker-alt"></i></li>
+      <li><i class="far fa-grin"></i></li>
+      <li><i class="far fa-user"></i></li>
+    </ul>
+    <div class="content">
+      <span class="counter">100</span>
+      <button>Izoh</button>
+    </div>
+  </div>
+</div>
+<a href="https://notowartest.netlify.app/"class="button" target="_blank">Testni boshlash!</a>
+<br> <br> 
+
+<div id="disqus_thread"></div>
+<script>
+   
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-notowar-netlify-app.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<h6 class="glow">Created by Akbar Hasanov</h6>
+
+<script src="./script.js"></script>
+</body>
+</html>
